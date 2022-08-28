@@ -7,7 +7,8 @@
 		"dev": "node scripts/esbuild.config.mjs",
 		"build": "tsc -noEmit -skipLibCheck && node scripts/esbuild.config.mjs production",
 		"ci": "tsc -noEmit -skipLibCheck && node scripts/esbuild.config.mjs ci",
-		"release": "standard-version"
+		"release": "standard-version",
+		"prepare": "husky install"
 	},
 	"packageManager": "pnpm@7.1.2",
 	"author": "phibr0",
